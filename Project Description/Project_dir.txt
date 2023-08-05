@@ -1,0 +1,178 @@
+├── .
+│   ├── .dvcignore
+│   ├── .gitignore
+│   ├── app.py
+│   ├── directory_structure.py
+│   ├── Dockerfile
+│   ├── dvc.yaml
+│   ├── main.py
+│   ├── params.yaml
+│   ├── README.md
+│   ├── requirements.txt
+│   ├── schema.yaml
+│   ├── setup.py
+│   ├── .dvc
+│   │   ├── .gitignore
+│   │   ├── config
+│       ├── tmp
+│       │   ├── dag.md
+│           ├── exps
+│           │   ├── cache
+│           │   │   ├── 44
+│           │   │   │   ├── 52d12baaed1381f5f7d5cc3830e812ca3e393f
+│           │   │   ├── 7d
+│           │   │   │   ├── 68a2cb4b620ed5c067523ea8b9c37ff9d82288
+│           │       ├── c9
+│           │       │   ├── ba11bfbc999f3b69a9635d203134ce75f32a7f
+│           │       │   ├── d359d3a135e4bf49ad472402cf8400082a4ff0
+│               ├── celery
+│               │   ├── broker
+│               │   │   ├── control
+│               │   │   ├── in
+│               │       ├── processed
+│                   ├── result
+│   ├── .git
+│   │   ├── COMMIT_EDITMSG
+│   │   ├── config
+│   │   ├── description
+│   │   ├── FETCH_HEAD
+│   │   ├── HEAD
+│   │   ├── index
+│   │   ├── ORIG_HEAD
+│   │   ├── hooks
+│   │   │   ├── applypatch-msg.sample
+│   │   │   ├── commit-msg.sample
+│   │   │   ├── fsmonitor-watchman.sample
+│   │   │   ├── post-update.sample
+│   │   │   ├── pre-applypatch.sample
+│   │   │   ├── pre-commit.sample
+│   │   │   ├── pre-merge-commit.sample
+│   │   │   ├── pre-push.sample
+│   │   │   ├── pre-rebase.sample
+│   │   │   ├── pre-receive.sample
+│   │   │   ├── prepare-commit-msg.sample
+│   │   │   ├── push-to-checkout.sample
+│   │   │   ├── sendemail-validate.sample
+│   │   │   ├── update.sample
+│   │   ├── info
+│   │   │   ├── exclude
+│   │   ├── logs
+│   │   │   ├── HEAD
+│   │       ├── refs
+│   │       │   ├── heads
+│   │       │   │   ├── main
+│   │           ├── remotes
+│   │               ├── origin
+│   │               │   ├── main
+│   │   ├── objects
+│   │   │   ├── 0a
+│   │   │   │   ├── 5568b3eb72786b7d025f317905c26d9b2a59ce
+│   │   │   ├── 3a
+│   │   │   │   ├── 670038a16c7f48b2781ab0cfd43f916c596fae
+│   │   │   ├── 44
+│   │   │   │   ├── 52d12baaed1381f5f7d5cc3830e812ca3e393f
+│   │   │   ├── 49
+│   │   │   │   ├── 9dd58eb0127059d15bda5323c075b9c633bd08
+│   │   │   │   ├── ce57fb30701076a11f4dd0960e5b59b62501a1
+│   │   │   ├── 51
+│   │   │   │   ├── 973055237895f2d23e65e015793fd302f4b9da
+│   │   │   ├── 52
+│   │   │   │   ├── 663b105fa186d1891eaae88a46530120cdf4ec
+│   │   │   │   ├── 8f30c71c687de473bbb506c071e902beba6cd9
+│   │   │   ├── 62
+│   │   │   │   ├── 2b53890bc7a7420d2f0142ff7acdde819fd46b
+│   │   │   ├── 64
+│   │   │   │   ├── a997865ab8f0ff852df8ade4fd41e39f8f239d
+│   │   │   ├── 7d
+│   │   │   │   ├── 68a2cb4b620ed5c067523ea8b9c37ff9d82288
+│   │   │   ├── 9c
+│   │   │   │   ├── 707e7b82f061798bf89f629498ea7f85d021a6
+│   │   │   ├── 9d
+│   │   │   │   ├── 1dcfdaf1a6857c5f83dc27019c7600e1ffaff8
+│   │   │   ├── b1
+│   │   │   │   ├── 7804add21b3bd7a27d08c06f319d3c376079fe
+│   │   │   ├── b8
+│   │   │   │   ├── 659caea33002a44ec16ae4154edd3877fdb82d
+│   │   │   ├── c3
+│   │   │   │   ├── 4d4e065ad14e84fc42d60216046cee0f482da6
+│   │   │   ├── c9
+│   │   │   │   ├── ba11bfbc999f3b69a9635d203134ce75f32a7f
+│   │   │   │   ├── d359d3a135e4bf49ad472402cf8400082a4ff0
+│   │   │   ├── d5
+│   │   │   │   ├── 64d0bc3dd917926892c55e3706cc116d5b165e
+│   │   │   ├── de
+│   │   │   │   ├── 35d630b4232ddfa3b65cc6655bc5bb51fcba6f
+│   │   │   ├── e6
+│   │   │   │   ├── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+│   │   │   ├── e8
+│   │   │   │   ├── 8c0fa42d1b327d2f72b7bf079f46da0b627c66
+│   │   │   ├── f5
+│   │   │   │   ├── 276d5bbb9c907acc8af5c7d23325b92d14f22f
+│   │   │   ├── f8
+│   │   │   │   ├── b123b4fec945fae3d2ea81a4fc6011c8bcc2af
+│   │   │   ├── fa
+│   │   │   │   ├── 0a70b05f7dd6ddeb1bf205500a06e7e522cd20
+│   │   │   ├── fd
+│   │   │   │   ├── 43293fa2c43d32db23390ef44ffa43bc38262d
+│   │   │   ├── ff
+│   │   │   │   ├── 7caf978246adb8b90929238fa72a61f1d5a761
+│   │   │   ├── info
+│   │       ├── pack
+│       ├── refs
+│       │   ├── heads
+│       │   │   ├── main
+│       │   ├── remotes
+│       │       ├── origin
+│       │       │   ├── main
+│           ├── tags
+│   ├── .github
+│       ├── workflows
+│       │   ├── .gitkeep
+│   ├── artifacts
+│       ├── plots
+│   ├── config
+│   │   ├── config.yaml
+│   ├── data
+│   │   ├── processed
+│   │   │   ├── test
+│   │   │   ├── train
+│   │       ├── validate
+│       ├── raw
+│   ├── logs
+│   │   ├── error
+│       ├── execution
+│   ├── Project Description
+│   │   ├── Project_dir.txt
+│   │   ├── Readme.txt
+│   ├── Scheduer
+│   │   ├── __init__.py
+│       ├── watchers
+│       │   ├── __init__.py
+│   ├── src
+│   │   ├── __init__.py
+│       ├── myProject
+│       │   ├── __init__.py
+│       │   ├── config
+│       │   │   ├── config.yaml
+│       │   │   ├── configuration.py
+│       │   │   ├── __init__.py
+│       │   ├── constants
+│       │   │   ├── __init__.py
+│       │   ├── entity
+│       │   │   ├── config_entity.py
+│       │   │   ├── __init__.py
+│       │   ├── logger
+│       │   │   ├── __init__.py
+│       │   ├── models
+│       │   │   ├── __init__.py
+│       │   ├── pipeline
+│       │   │   ├── __init__.py
+│       │   ├── research
+│       │   │   ├── research.ipynb
+│           ├── utils
+│           │   ├── common.py
+│           │   ├── __init__.py
+│   ├── templates
+│   │   ├── index.html
+    ├── __pycache__
+    │   ├── directory_structure.cpython-311.pyc
